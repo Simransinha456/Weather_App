@@ -13,7 +13,7 @@ const Row = styled(Typography) ({
 })
 
 const Error= styled(Typography)({
-    color: 'red',
+    color: 'black',
     margin: 50,
     padding: 40
 })
@@ -24,7 +24,7 @@ const Information = ({ result}) => {
     <Box style = {{ margin: '30px 60px'}}>
 
    
-        <Row><LocationOn/>Location: {result.name} {result.sys.Country}</Row>
+        <Row><LocationOn/> Location: {result.name} {result.sys.Country}</Row>
         <Row><SettingsBrightness/> Temperature: {result.main.temp} </Row>
         <Row><Opacity/> Humidity: {result.main.humidity} </Row>
         <Row><Brightness5/> Sun Rise: {new Date (result.sys.sunrise * 1000). toLocaleTimeString()} </Row>
@@ -32,10 +32,8 @@ const Information = ({ result}) => {
         <Row><Dehaze/> Humidity: {result.weather[0].main} </Row>
         <Row><Cloud/> Clouds: {result.clouds.all}% </Row>
     </Box>
-    : <Error>Please enter the value to check weather report</Error>
+    : <Error>Please enter the value to check weather report!!</Error>
   )
 }
-
-
 
 export default Information
