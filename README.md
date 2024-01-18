@@ -1,4 +1,4 @@
-# Getting Started with Create React App
+# Short description about my project: Weather Application
 
 In this project that is my Weather Application I used OpenWeatherMap API that provides Open AI which provides real time weather information.  
 Basically it fetch the data from OpenWeatherMap API and then display in the webpage.
